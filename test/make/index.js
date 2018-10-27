@@ -1,5 +1,5 @@
 const assert = require('assert');
-const fun = require('../../src/make/index');
+const fun = require('../../src/make/make');
 
 function sum(a, b) {
   return a + b;

@@ -1,5 +1,5 @@
 var assert = require('assert');
-var sumOfOther = require('../../src/sumOfOther/index');
+var sumOfOther = require('../../src/sumOfOther/sumOfOther');
 
 describe('sumOfOther', function () {
   it('Test 1', function () {
