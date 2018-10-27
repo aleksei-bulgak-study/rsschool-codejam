@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test"
+    "test": "mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "url": "https://github.com/aleksei-bulgak-study/rsschool-codejam/issues"
   },
   "homepage": "https://github.com/aleksei-bulgak-study/rsschool-codejam#readme",
-  "dependencies": {
+  "devDependencies": {
     "mocha": "^5.2.0"
   }
 }
