@@ -1,18 +1,21 @@
-module.exports = function recursion(tree){
-  if(!tree){
+module.exports = function recursion(tree) {
+  const array = [];
+  function internal(node, depth) {
+    if (node && node.value) {
+      if (array[depth]) {
+        array[depth].push(node.value);
+      } else {
+        array[depth] = [node.value];
+      }
+      internal(node.left, depth + 1);
+      internal(node.right, depth + 1);
+    }
+  }
+
+  if (!tree) {
     throw new Error('Invalid input argument');
   }
 
-  const array = [];
-  let depth = 0;
-  _internal(tree, depth);
+  internal(tree, 0);
   return array;
-
-  function _internal(tree, depth) {
-    if (tree && tree.value) {
-      array[depth] ? array[depth].push(tree.value) : array[depth] = [tree.value];
-      _internal(tree.left, depth + 1);
-      _internal(tree.right, depth + 1);
-    }
-  }
-}
+};

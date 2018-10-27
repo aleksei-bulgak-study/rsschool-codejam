@@ -1,8 +1,6 @@
 var assert = require('assert');
 var sumOfOther = require('../../src/sumOfOther/index');
 
-console.log(sumOfOther)
-
 describe('sumOfOther', function () {
   it('Test 1', function () {
     assert.equal(JSON.stringify(sumOfOther([2, 3, 4, 1])), JSON.stringify([8, 7, 6, 9]));
