@@ -1,3 +1,6 @@
+/**
+ * @param {arguments} arguments numbers or function
+ */
 module.exports = function make() {
   let sum = [];
   const fun = function internal() {
