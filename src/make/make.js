@@ -4,11 +4,9 @@
 module.exports = function make(...args) {
   const sum = [];
 
-  const calculate = function calculate(predicate) {
-    return sum.slice(1).reduce(predicate, sum[0]);
-  };
+  const calculate = predicate => sum.reduce(predicate);
 
-  const fun = function internal(...params) {
+  const fun = (...params) => {
     for (let index = 0; index < params.length; index += 1) {
       if (typeof params[index] === 'number') {
         sum.push(params[index]);
