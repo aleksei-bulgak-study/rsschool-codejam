@@ -1,3 +1,4 @@
+/* global it, describe */
 const assert = require('assert');
 const sumOfOther = require('../../src/sumOfOther/sumOfOther');
 
@@ -11,6 +12,6 @@ describe('sumOfOther', () => {
   });
 
   it('Test 3', () => {
-    assert.throws(sumOfOther, Error, "Invalid argument exception. Expected array");
+    assert.throws(sumOfOther, Error, 'Invalid argument exception. Expected array');
   });
 });

@@ -7,11 +7,11 @@ module.exports = function make(...args) {
   const calculate = predicate => sum.reduce(predicate);
 
   const fun = (...params) => {
-    for (let index = 0; index < params.length; index += 1) {
-      if (typeof params[index] === 'number') {
-        sum.push(params[index]);
-      } else if (typeof params[index] === 'function') {
-        return sum.length > 0 ? calculate(params[index]) : 0;
+    for (const arg of params) {
+      if (typeof arg === 'number') {
+        sum.push(arg);
+      } else if (typeof arg === 'function') {
+        return sum.length > 0 ? calculate(arg) : 0;
       }
     }
     return fun;
