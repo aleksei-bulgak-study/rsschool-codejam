@@ -1,0 +1,30 @@
+{
+  "name": "rsschool-codejam",
+  "version": "1.0.0",
+  "description": "RSS code jam",
+  "main": "src/sumOfOther/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --recursive",
+    "lint": "eslint src/ test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aleksei-bulgak-study/rsschool-codejam.git"
+  },
+  "author": "Aleksei Bulgak <aleksei.bulgak@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aleksei-bulgak-study/rsschool-codejam/issues"
+  },
+  "homepage": "https://github.com/aleksei-bulgak-study/rsschool-codejam#readme",
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {}
+}
